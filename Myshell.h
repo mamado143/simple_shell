@@ -9,6 +9,7 @@
 #include <sys/types.h>
 #include <string.h>
 /**** Functions****/
+extern char **environ;
 void process_command(void);
 int Token_input(char *input_line);
 int str_program(char *arguments[]);
