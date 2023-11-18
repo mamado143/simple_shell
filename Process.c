@@ -1,7 +1,5 @@
 #include "Myshell.h"
 #include <unistd.h>
-
-
 /**
  * launch_new_process - starts a new program as a child process
  * @arguments: The command args as input
@@ -9,16 +7,15 @@
  */
 int launch_new_process(char *arguments[])
 {
-    char *line = NULL;
-    int child_pid;
-    char *executable_path;
-    int process_status;
+	char *line = NULL;
+	int child_pid;
+	char *executable_path;
+	int process_status;
 
-    child_pid = fork();
-    if (child_pid == -1)
-    {
-        perror("The Forking Failed");
-        free(line);
+	child_pid = fork();
+	if (child_pid == -1)
+	{
+		perror(free(line);
         return (-1);
     }
     else if (child_pid == 0)

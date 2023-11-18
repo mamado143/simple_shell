@@ -1,12 +1,11 @@
 #include "Myshell.h"
-
 /**
  * exit_shell - Exits the Myshell.
  * Exits with code 0 for success.
  */
 void exit_shell(void)
 {
-    exit(0);
+	exit(0);
 }
 
 /**
@@ -15,9 +14,8 @@ void exit_shell(void)
  */
 void handle_signal(int signal_number)
 {
-    char *shell_prompt = "\n$ ";
-
-    (void)signal_number;
-    write(1, shell_prompt, strlen(shell_prompt));
-    fflush(stdout);
+	char *shell_prompt = "\n$ ";
+	(void)signal_number;
+	write(1, shell_prompt, strlen(shell_prompt));
+	fflush(stdout);
 }

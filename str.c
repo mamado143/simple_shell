@@ -7,14 +7,13 @@
  */
 int compare_strings(const char *str1, const char *str2)
 {
-    while (*str1 && (*str1 == *str2))
-    {
-        str1++;
-        str2++;
-    }
-    return (*str1 - *str2);
+	while (*str1 && (*str1 == *str2))
+	{
+		str1++;
+		str2++;
+	}
+	return (*str1 - *str2);
 }
-
 /**
  * calculate_string_length - Calculate the length of a string.
  * @str: Input string.
@@ -22,9 +21,8 @@ int compare_strings(const char *str1, const char *str2)
  */
 size_t calculate_string_length(const char *str)
 {
-    size_t length = 0;
+	size_t length = 0;
 
-    while (str[length++]);
-
-    return (length - 1);
+	while (str[length++]);
+	return (length - 1);
 }
