@@ -8,7 +8,7 @@ void print_error_message(char *command)
 {
 	char *first_error = "Command '";
 	char *second_error = "' not found\n";
-	
+
 	write(STDERR_FILENO, first_error, strlen(first_error));
 	write(STDERR_FILENO, command, strlen(command));
 	write(STDERR_FILENO, second_error, strlen(second_error));

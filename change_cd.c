@@ -1,6 +1,6 @@
 #include "Myshell.h"
 /**
- * change_directory_builtin - Changes the current working directory.
+ * change_directory_builtin - Changes the working directory.
  * @target_dir: Argument passed to the cd command.
  */
 void change_directory_builtin(char *target_dir)
@@ -12,7 +12,8 @@ void change_directory_builtin(char *target_dir)
 		home = getenv("HOME");
 		if (home == NULL)
 		{
-			perror("cd: HOME environment is not set.\n");
+			perror("Environment is not set.\n");
+
 		}
 		else
 		{
@@ -26,7 +27,7 @@ void change_directory_builtin(char *target_dir)
 	{
 		if (chdir(target_dir) != 0)
 		{
-			perror(" Failed to change the directory.");
+			perror(" Failed cd  the directory.");
 		}
 	}
 }

@@ -15,23 +15,24 @@ int launch_new_process(char *arguments[])
 	child_pid = fork();
 	if (child_pid == -1)
 	{
-		perror(free(line);
-				return (-1);
+		perror("The Forking Failed");
+		free(line);
+		return (-1);
 	}
 	else if (child_pid == 0)
 	{
-	executable_path = find_executable(arguments[0]);
-	if (executable_path != NULL)
-	{
-	execve(executable_path, arguments, environ);
-	free(line);
-	print_error_message(arguments[0]);
-	exit(1);
-	}
+		executable_path = find_executable(arguments[0]);
+		if (executable_path != NULL)
+		{
+			execve(executable_path, arguments, environ);
+			free(line);
+			print_error_message(arguments[0]);
+			exit(1);
+		}
 	}
 	else
 	{
-	waitpid(child_pid, &process_status, 0);
+		waitpid(child_pid, &process_status, 0);
 	}
 	return (0);
 }

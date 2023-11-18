@@ -23,16 +23,16 @@ int Token_input(char *input_line)
 	{
 		return (0);
 	}
-	if (compare_strings(args[0], "chdir") == 0)
+	if (compare_Two_strings(args[0], "chdir") == 0)
 	{
 		change_directory_builtin(args[1]);
 	}
-	else if (compare_strings(args[0], "exitsh") == 0)
+	else if (compare_Two_strings(args[0], "exitsh") == 0)
 	{
 		free(input_line);
 		exit_shell();
 	}
-	else if (compare_strings(args[0], "envshow") == 0)
+	else if (compare_Two_strings(args[0], "envshow") == 0)
 	{
 		print_env();
 	}
