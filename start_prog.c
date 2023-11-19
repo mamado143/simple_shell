@@ -26,7 +26,7 @@ int str_program(char *arguments[])
 		{
 			execve(executable_path, arguments, environ);
 			free(line);
-			print_error_message(arguments[0])
+			print_error_message(arguments[0]);
 				free(executable_path);
 			exit(1);
 		}

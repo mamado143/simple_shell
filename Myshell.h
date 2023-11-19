@@ -16,6 +16,7 @@ extern char *token;
 extern char *line;
 extern char *delimiters;
 extern char *command_arguments[];
+void execute_user_command();
 char *get_path_check(char *command);
 int _pid(char *command_arguments[]);
 void process_command(void);
