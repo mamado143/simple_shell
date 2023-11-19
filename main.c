@@ -1,7 +1,9 @@
 #include "Myshell.h"
 /**
   * main - is main entry of the program.
-  * Return: returns 0 in success state.
+  * @argc: just for args.
+  * @argv: array of args
+  *Return: returns 0 in success state.
   */
 int main(int argc, char *argv[])
 {
@@ -9,5 +11,5 @@ int main(int argc, char *argv[])
 	{
 		execute_user_command();
 	}
-	return 0;
+	return (0);
 }
