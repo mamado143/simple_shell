@@ -5,7 +5,7 @@
   * @argv: array of args
   *Return: returns 0 in success state.
   */
-int main(int argc, char *argv[])
+int main(void)
 {
 	while (1)
 	{
